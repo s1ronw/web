@@ -1,0 +1,246 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Outfit:300|Big+Shoulders+Display:800");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
+
+:root {
+  --almost-black: rgba(21, 21, 21, 1);
+  --white: rgba(255, 255, 255, 1);
+  --gold: rgba(213, 150, 108, 1);
+  --dark-grey: rgba(68, 68, 68, 1);
+  --heading-XL-font-family: "Big Shoulders Display", Helvetica;
+  --heading-XL-font-weight: 900;
+  --heading-XL-font-size: 96px;
+  --heading-XL-letter-spacing: 0px;
+  --heading-XL-line-height: 88px;
+  --heading-XL-font-style: normal;
+  --heading-l-font-family: "Big Shoulders Display", Helvetica;
+  --heading-l-font-weight: 900;
+  --heading-l-font-size: 70px;
+  --heading-l-letter-spacing: 0px;
+  --heading-l-line-height: 70px;
+  --heading-l-font-style: normal;
+  --heading-m-font-family: "Big Shoulders Display", Helvetica;
+  --heading-m-font-weight: 900;
+  --heading-m-font-size: 60px;
+  --heading-m-letter-spacing: 0px;
+  --heading-m-line-height: 60px;
+  --heading-m-font-style: normal;
+  --heading-s-font-family: "Big Shoulders Display", Helvetica;
+  --heading-s-font-weight: 900;
+  --heading-s-font-size: 36px;
+  --heading-s-letter-spacing: 0px;
+  --heading-s-line-height: 36px;
+  --heading-s-font-style: normal;
+  --body-m-font-family: "Outfit", Helvetica;
+  --body-m-font-weight: 300;
+  --body-m-font-size: 22px;
+  --body-m-letter-spacing: 0px;
+  --body-m-line-height: 32px;
+  --body-m-font-style: normal;
+  --body-s-font-family: "Outfit", Helvetica;
+  --body-s-font-weight: 300;
+  --body-s-font-size: 18px;
+  --body-s-letter-spacing: 0px;
+  --body-s-line-height: 28px;
+  --body-s-font-style: normal;
+}
+
+
+.desktop-location {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.desktop-location .div {
+  background-color: var(--white);
+  width: 1440px;
+  height: 1392px;
+  position: relative;
+}
+
+.desktop-location .group {
+  position: absolute;
+  width: 1440px;
+  height: 244px;
+  top: 1148px;
+  left: 0;
+}
+
+.desktop-location .overlap-group {
+  position: relative;
+  width: 1442px;
+  height: 246px;
+  top: -1px;
+  left: -1px;
+  background-color: var(--gold);
+}
+
+.desktop-location .group-2 {
+  position: relative;
+  width: 1110px;
+  height: 84px;
+  top: 81px;
+  left: 166px;
+}
+
+.desktop-location .group-3 {
+  position: absolute;
+  width: 730px;
+  height: 84px;
+  top: 0;
+  left: 0;
+}
+
+.desktop-location .the-modern-art-galle {
+  position: absolute;
+  width: 430px;
+  top: 0;
+  left: 300px;
+  font-family: "Outfit", Helvetica;
+  font-weight: 300;
+  color: var(--almost-black);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+.desktop-location .MODERNARTGALLERY {
+  position: absolute;
+  width: 160px;
+  height: 58px;
+  top: 0;
+  left: 0;
+}
+
+.desktop-location .group-4 {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  top: 0;
+  left: 1010px;
+}
+
+.desktop-location .path {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+}
+
+.desktop-location .shape {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 40px;
+}
+
+.desktop-location .img {
+  position: absolute;
+  width: 20px;
+  height: 16px;
+  top: 2px;
+  left: 80px;
+}
+
+.desktop-location .overlap {
+  position: absolute;
+  width: 1440px;
+  height: 600px;
+  top: 0;
+  left: 0;
+  background-image: url(./img1/maps.png);
+  background-size: 100% 100%;
+}
+
+.desktop-location .group-5 {
+  position: relative;
+  width: 264px;
+  height: 72px;
+  left: 156px;
+}
+
+.desktop-location .overlap-group-wrapper {
+  position: absolute;
+  width: 208px;
+  height: 72px;
+  top: 0;
+  left: 56px;
+  overflow: hidden;
+}
+
+.desktop-location .div-wrapper {
+  position: relative;
+  width: 210px;
+  height: 74px;
+  top: -1px;
+  left: -1px;
+  background-color: var(--almost-black);
+}
+
+.desktop-location .text-wrapper {
+  position: absolute;
+  top: 25px;
+  left: 33px;
+  font-family: "Big Shoulders Display", Helvetica;
+  font-weight: 800;
+  color: var(--white);
+  font-size: 20px;
+  letter-spacing: 3.64px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.desktop-location .overlap-wrapper {
+  position: absolute;
+  width: 56px;
+  height: 72px;
+  top: 0;
+  left: 0;
+}
+
+.desktop-location .path-wrapper {
+  position: relative;
+  width: 58px;
+  height: 74px;
+  top: -1px;
+  left: -1px;
+  background-color: var(--gold);
+}
+
+.desktop-location .path-2 {
+  position: absolute;
+  width: 9px;
+  height: 25px;
+  top: 25px;
+  left: 24px;
+}
+
+.desktop-location .group-6 {
+  position: absolute;
+  width: 1440px;
+  height: 548px;
+  top: 600px;
+  left: 0;
+}
