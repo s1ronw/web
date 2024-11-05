@@ -1,0 +1,19 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Simple File Manager</title> 
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body> 
+    <h1>File Manager</h1> 
+    <button onclick="showCategory('Documents')">Documents</button>
+    <button onclick="showCategory('Files')">Files</button>
+    <button onclick="showCategory('Photos')">Photos</button>
+    <input type="file" id="fileInput" multiple> 
+    <button onclick="uploadFiles()">Upload</button> 
+    <div id="fileList"></div> 
+    <script src="script.js"></script>
+</body> 
+</html>
