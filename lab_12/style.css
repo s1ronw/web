@@ -1,0 +1,30 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#container {
+    margin: auto;
+}
+
+#pokecont {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+}
+
+#header-container {
+    border-radius: 0px !important;
+}
+
+#header-text {
+    margin: 0 auto;
+}
+
+#genpokemon {
+    margin: 0 auto;
+}
+
+#deletebutt {
+    display: none;
+}
