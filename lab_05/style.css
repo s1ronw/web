@@ -1,0 +1,115 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hero {
+    background: linear-gradient(135deg, #ff5733, #ffc300);
+    padding: 5rem 0;
+    color: white;
+    text-align: center;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.name {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+section {
+    padding: 3rem 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.about p, .skills p, .contact p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.skills-list {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background-color: #fff;
+    color: #333;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 1rem);
+    text-align: center;
+}
+
+.experience-item, .education-item {
+    margin-bottom: 2rem;
+}
+
+.job-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.company {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ff5733;
+}
+
+.job-description {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.social-link {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #ff5733;
+    margin-right: 1rem;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
