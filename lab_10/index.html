@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог Танков</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Каталог Танків</h1>
+    <div class="tank-menu">
+        <div class="tank tank1">
+            <img src="img/2c38.jpg">
+            <p>2С38 "Деривация"</p>
+        </div>
+        <div class="tank tank2">
+            <img src="img/abrams.jpg">
+            <p>M1 Abrams</p>
+        </div>
+        <div class="tank tank3">
+            <img src="img/turms.jpg">
+            <p>Т-72АВ (TURMS-T)</p>
+        </div>
+        <div class="tank tank4">
+            <img src="img/t-34-85.jpg_large">
+            <p>T-34-85</p>
+        </div>
+        <div class="tank tank5">
+            <img src="img/sherman.png">
+            <p>M4 Sherman</p>
+        </div>
+        <div class="tank tank6">
+            <img src="img/gepard.jpg">
+            <p>Flakpanzer Gepard</p>
+        </div>
+        <div class="tank tank7">
+            <img src="img/tiger 2.jpg">
+            <p>Tiger II (H)</p>
+        </div>
+        <div class="tank tank8">
+            <img src="img/challenger 2.jpg">
+            <p>Challenger 2</p>
+        </div>
+        <div class="tank tank9">
+            <img src="img/a10.jpg">
+            <p>A-10 Thunderbolt II</p>
+        </div>
+        <div class="tank tank10">
+            <img src="img/su25k.jpg">
+            <p>SU-25K</p>
+        </div>
+        <div class="tank tank11">
+            <img src="img/mig-21.jpg">
+            <p>MIG-21 "Lazur-M"</p>
+        </div>
+        <div class="tank tank12">
+            <img src="img/f4j.jpg">
+            <p>F-4J Phantom II</p>
+        </div>
+    </div>
+
+    <div id="tank-info" class="tank-info-modal" style="display: none;">
+        <div class="tank-info-content">
+            <button onclick="closeTankInfo()" class="close-btn">&times;</button>
+            <div id="tank-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
