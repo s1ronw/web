@@ -9,3 +9,6 @@ https://s1ronw.github.io/web/lab_07/ - lab_07
 https://s1ronw.github.io/web/lab_08/ - lab_08
 https://s1ronw.github.io/web/lab_09/ - lab_09
 https://s1ronw.github.io/web/lab_10/ - lab_10
+https://s1ronw.github.io/web/lab_11/ - lab_11
+https://s1ronw.github.io/web/lab_12/ - lab_12
+https://s1ronw.github.io/web/lab_13/ - lab_13
