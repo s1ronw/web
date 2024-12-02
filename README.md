@@ -4,7 +4,7 @@ https://s1ronw.github.io/web/lab_01/kitchen/ - lab_01 (kitchen)
 https://s1ronw.github.io/web/lab_02/apples/ - lab_02 (apples)
 https://s1ronw.github.io/web/lab_03/planets/ - lab_03 (planets)
 https://s1ronw.github.io/web/lab_04/museum/ - lab_04 (museum)
-https://s1ronw.github.io/web/lab_05/ - lab_06
+https://s1ronw.github.io/web/lab_05/ - lab_05
 https://s1ronw.github.io/web/lab_06/ - lab_06
 https://s1ronw.github.io/web/lab_07/ - lab_07
 https://s1ronw.github.io/web/lab_08/ - lab_08
