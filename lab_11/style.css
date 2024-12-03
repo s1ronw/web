@@ -1,0 +1,177 @@
+body {
+    background-color: #b5d9db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main-container .lobby{
+    width: 100%; 
+    height: auto;
+    position: absolute; 
+    top: 10%;
+    left: 50%;
+    background-image: url(imga.png);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#tagContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    gap: 8px;
+    background-color: #e0f7f8;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.24);
+    width: 820px;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    background-color: #4cafaf;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tag .remove-btn {
+    background: #333;
+    color: white;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 50%;
+    font-size: 12px;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clear-btn {
+    color: #4cafaf;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: auto;
+}
+
+.job-listings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.job-card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.24);
+    width: 100%;
+}
+
+.company-logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.job-info {
+    margin-left: 20px;
+}
+
+.job-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.company-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.badge {
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    color: white;
+}
+
+.new {
+    background-color: #5ea4a2;
+}
+
+.featured {
+    background-color: #333;
+}
+
+.job-title {
+    font-size: 18px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.job-details {
+    font-size: 14px;
+    color: #888;
+}
+
+.job-card .tag-container {
+    display: flex;
+    margin-left: 10px;
+    gap: 8px;
+    margin-left: auto;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    background-color: #edf9f7;
+    color: #688383;
+    padding: 5px 10px;
+    border-radius: 16px;
+    font-size: 14px;
+}
+
+.tag .remove-btn {
+    background-color: #5ea4a2;
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
