@@ -11,7 +11,7 @@ function guessNumber() {
         let reward = 0;
 
         if(i === 0){
-            reward = 40;
+            reward = 20;
         } else if (i === 1){
             reward = 20;
         }
