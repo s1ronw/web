@@ -1,36 +1,49 @@
 let balance = 100;
-const randomNumbers = 5;
-const maxTries = 3;
+const totalNumbers = 10;
+const minGuess = 1;
+const maxGuess = 3;
+let chances = 3;
 
-function guessNumber() {
-    for (let i = 0; i < maxTries; i++){
-    const userGuess = parseInt(prompt('Вибери число від 1 до 5'));
-    const randomNumber = Math.floor(Math.random() * randomNumbers) + 1;
-
-    if (userGuess === randomNumber){
-        let reward = 0;
-
-        if(i === 0){
-            reward = 20;
-        } else if (i === 1){
-            reward = 20;
-        }
-        else if (i === 2){
-            reward = 10;
-        }
-
-
-        balance =+ reward;
-        alert(`Ви вгадали число ${randomNumber}! Ваш баланс ${balance}`);
-    }
-    else{
+function startGame() {
+    while (balance >= 20) {
         balance -= 20;
-        alert(`Ви не вгадали! Ваш баланс ${balance}`);
+        console.log(`Game started. Balance: $${balance}`);
+
+        const randomNumber = Math.floor(Math.random() * totalNumbers) + 1;
+        let guessedCorrectly = false;
+        while (chances > 0 && !guessedCorrectly) {
+            let guess = prompt(`Current Balance: $${balance}. Guess a number between ${minGuess} and ${maxGuess} (Chances left: ${chances}):`);
+            guess = Number(guess);
+
+            if (isNaN(guess) || guess < minGuess || guess > maxGuess) {
+                alert(`Please enter a number between ${minGuess} and ${maxGuess}.`);
+                continue;
+            }
+            
+            if (guess === randomNumber) {
+                guessedCorrectly = true;
+                let reward = 50;
+                balance += reward;
+                alert(`Correct! You guessed the number ${randomNumber}. You won $${reward}. New balance: $${balance}`);
+                chances = 3;
+            } else {
+                chances--;
+                balance -= 10;
+                alert(`Wrong guess! Your balance: $${balance}.`);
+            }
+        }
+
+        if (!guessedCorrectly) {
+            alert(`Sorry, you didn't guess the number. It was ${randomNumber}. Your balance: $${balance}.`);
+            chances = 3;
+        }
+
+        if (balance >= 20 && !confirm("Do you want to play again? It will cost $20.")) {
+            break;
+        }
     }
-}
-    if(balance > 0){
-        alert('Ігра закінчилася');
-    }
+
+    alert("Game over! You don't have enough balance to continue.");
 }
 
-guessNumber();
+startGame();
