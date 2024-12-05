@@ -1,49 +1,38 @@
-let balance = 100;
-const totalNumbers = 10;
-const minGuess = 1;
-const maxGuess = 3;
-let chances = 3;
-
 function startGame() {
+    let balance = 100;
+    alert("Ласкаво просимо в гру! Ваш початковий баланс: $" + balance);
+
     while (balance >= 20) {
-        balance -= 20;
-        console.log(`Game started. Balance: $${balance}`);
+        const randomNumber = Math.floor(Math.random() * 10) + 1;
+        let attempts = 3;
 
-        const randomNumber = Math.floor(Math.random() * totalNumbers) + 1;
-        let guessedCorrectly = false;
-        while (chances > 0 && !guessedCorrectly) {
-            let guess = prompt(`Баланс: $${balance}. Вгадай число від ${minGuess} і ${maxGuess} (Спроб залишилося: ${chances}):`);
-            guess = Number(guess);
+        while (attempts > 0) {
+            let guess = parseInt(prompt("Вгадайте число від 1 до 10. У вас " + attempts + " спроби:"));
 
-            if (isNaN(guess) || guess < minGuess || guess > maxGuess) {
-                alert(`Введіть число між ${minGuess} і ${maxGuess}.`);
-                continue;
-            }
-            
             if (guess === randomNumber) {
-                guessedCorrectly = true;
-                let reward = 50;
-                balance += reward;
-                alert(`Найс, ти вгадав число ${randomNumber}. Ти виграв $${reward}. Твій баланс: $${balance}`);
-                chances = 3;
+                alert("Вітаємо! Ви вгадали число: " + randomNumber);
+                balance += 10;
+                break;
             } else {
-                chances--;
-                balance -= 10;
-                alert(`Неправильно, твій баланс: $${balance}.`);
+                attempts--;
+                balance -= 5;
+                alert("Неправильно! Залишилося спроб: " + attempts);
             }
         }
 
-        if (!guessedCorrectly) {
-            alert(`Ти не вгадав число. Це було ${randomNumber}. Твій баланс: $${balance}.`);
-            chances = 3;
+        if (attempts === 0) {
+            alert("Ви вичерпали всі спроби. Загадане число було: " + randomNumber);
         }
 
-        if (balance >= 20 && !confirm("Хочете ще раз зіграти? Це буде коштувати $20.")) {
-            break;
+        if (balance < 20) {
+            alert("Ваш баланс недостатній для продовження гри. Дякуємо за гру!");
+            break; 
         }
+
+        alert("Ваш поточний баланс: $" + balance + ". Починаємо новий раунд!");
     }
 
-    alert("Ігра закінчилася");
+    alert("Спасибо за игру! Ваш финальный баланс: $" + balance);
 }
 
 startGame();
