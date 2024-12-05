@@ -12,11 +12,11 @@ function startGame() {
         const randomNumber = Math.floor(Math.random() * totalNumbers) + 1;
         let guessedCorrectly = false;
         while (chances > 0 && !guessedCorrectly) {
-            let guess = prompt(`Current Balance: $${balance}. Guess a number between ${minGuess} and ${maxGuess} (Chances left: ${chances}):`);
+            let guess = prompt(`Баланс: $${balance}. Вгадай число від ${minGuess} і ${maxGuess} (Спроб залишилося: ${chances}):`);
             guess = Number(guess);
 
             if (isNaN(guess) || guess < minGuess || guess > maxGuess) {
-                alert(`Please enter a number between ${minGuess} and ${maxGuess}.`);
+                alert(`Введіть число між ${minGuess} і ${maxGuess}.`);
                 continue;
             }
             
@@ -24,26 +24,26 @@ function startGame() {
                 guessedCorrectly = true;
                 let reward = 50;
                 balance += reward;
-                alert(`Correct! You guessed the number ${randomNumber}. You won $${reward}. New balance: $${balance}`);
+                alert(`Найс, ти вгадав число ${randomNumber}. Ти виграв $${reward}. Твій баланс: $${balance}`);
                 chances = 3;
             } else {
                 chances--;
                 balance -= 10;
-                alert(`Wrong guess! Your balance: $${balance}.`);
+                alert(`Неправильно, твій баланс: $${balance}.`);
             }
         }
 
         if (!guessedCorrectly) {
-            alert(`Sorry, you didn't guess the number. It was ${randomNumber}. Your balance: $${balance}.`);
+            alert(`Ти не вгадав число. Це було ${randomNumber}. Твій баланс: $${balance}.`);
             chances = 3;
         }
 
-        if (balance >= 20 && !confirm("Do you want to play again? It will cost $20.")) {
+        if (balance >= 20 && !confirm("Хочете ще раз зіграти? Це буде коштувати $20.")) {
             break;
         }
     }
 
-    alert("Game over! You don't have enough balance to continue.");
+    alert("Ігра закінчилася");
 }
 
 startGame();
