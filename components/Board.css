@@ -1,0 +1,14 @@
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .win-message {
+    text-align: center;
+    font-size: 24px;
+    color: green;
+    margin-top: 20px;
+  }
+  
