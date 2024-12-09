@@ -4,9 +4,9 @@ https://s1ronw.github.io/web/lab_01/food/ - food
 
 https://s1ronw.github.io/web/lab_01/kitchen/ - kitchen
 
-https://s1ronw.github.io/web/lab_02/ - apples
+https://s1ronw.github.io/web/lab_02/apples - apples
 
-https://s1ronw.github.io/web/lab_03/ - planets
+https://s1ronw.github.io/web/lab_03/planets - planets
 
 https://s1ronw.github.io/web/lab_04/ - museum
 
