@@ -28,4 +28,4 @@ https://s1ronw.github.io/web/lab_12/ - pokemons
 
 https://s1ronw.github.io/web/lab_13/index.html - dummyjson
 
-https://s1ronw.github.io/web/react_15/ - react memory-game
+https://s1ronw.github.io/web/react/ - react memory-game
