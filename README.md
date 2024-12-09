@@ -13,3 +13,4 @@ https://s1ronw.github.io/web/lab_10/ - lab_10
 https://s1ronw.github.io/web/lab_11/ - lab_11
 https://s1ronw.github.io/web/lab_12/ - lab_12
 https://s1ronw.github.io/web/lab_13/ - lab_13
+https://s1ronw.github.io/web/react/ - react
